@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>AIに代替される仕事クイズ</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Cyberpunk CSS for neon fonts -->
+  <link rel="stylesheet" href="https://alddesign.github.io/cyberpunk-css/dist/cyberpunk.min.css">
+</head>
+<body>
+  <!-- 近未来グリッド背景 -->
+  <div class="grid-bg"></div>
+
+  <!-- スプラッシュ画面 -->
+  <div id="splash" class="screen">
+    <h1 class="cyberpunk-font-og">AIに代替される仕事クイズ</h1>
+    <p>将来AIに取って代わられる可能性のある仕事について学びましょう。</p>
+    <button id="startBtn" class="cyberpunk-font">クイズを始める</button>
+  </div>
+
+  <!-- クイズ画面 -->
+  <div id="quiz" class="screen hidden">
+    <h1 class="cyberpunk-font-og">AIに代替される仕事クイズ</h1>
+    <div id="timer">残り時間: <span id="time">15</span>秒</div>
+    <div id="question"></div>
+    <div id="choices"></div>
+    <button id="next" disabled>次へ</button>
+  </div>
+
+  <!-- 結果画面 -->
+  <div id="result" class="screen hidden">
+    <h2 class="cyberpunk-font-og">あなたのスコア</h2>
+    <p id="scoreText"></p>
+    <button id="restart" class="cyberpunk-font">もう一度挑戦</button>
+    <button id="backToStart" class="cyberpunk-font">スタート画面に戻る</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
